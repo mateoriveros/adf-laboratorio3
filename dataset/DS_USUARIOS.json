@@ -1,0 +1,36 @@
+{
+	"name": "DS_USUARIOS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "USER_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "NOMBRES",
+				"type": "varchar"
+			},
+			{
+				"name": "FECHA_NAC",
+				"type": "date"
+			},
+			{
+				"name": "PESO",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "USUARIOS"
+		}
+	}
+}
